@@ -1,0 +1,32 @@
+@import services.model.Student
+@(form :Form[services.formServices.ProductFormService.Data],  students :Seq[Student])(implicit messagesRequestHeader: MessagesRequestHeader)
+
+
+
+
+@helper.form(routes.FormController.insertStudent) {
+    @helper.CSRF.formField
+
+    @helper.inputText(form("name"))
+
+    @helper.inputText(form("age"))
+
+    <button>Create widget</button>
+}
+
+    <p></p>
+<table>
+    <tr>
+        <th>name</th>
+        <th>age</th>
+        <th>id</th>
+    </tr>
+    @for(i <- students){
+        <tr>
+            <td>@i.name</td>
+            <td>@i.age</td>
+            <td>@i.id</td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,35 @@
+@(implicit assetsFinder: AssetsFinder)
+
+
+<!Doctype html>
+
+<head>
+    <title>Products</title>
+    <link rel="stylesheet" media="screen" href="@assetsFinder.path(" stylesheets/bootstrap.css")"> <script src="@assetsFinder.path("javascripts/bootstrap.js")" type="text/javascript"></script>
+    <script src="@assetsFinder.path("javascripts/jquery.js")" type="text/javascript"></script>
+    <script src="@assetsFinder.path("javascripts/myajax.js")" type="text/javascript"></script>
+</head>
+
+
+<body>
+
+    
+
+
+
+    <div class="container">
+        <a href="@routes.HomeController.ajxCall()">products</a>
+
+    </div>
+
+    <div>
+        <p id="demo">Hello Bro</p>
+        <button type="button">Click</button>
+    </div>
+
+
+</body>
+
+
+
+</html>
