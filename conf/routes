@@ -16,6 +16,8 @@ GET     /ajxcall                    controllers.HomeController.ajxCall
 GET     /createtable                controllers.HomeController.createTable
 #Go to form page
 GET     /formpage                   controllers.FormController.gotoformpage
+# go to login page
+GET     /login                   controllers.FormController.gotoLoginpage
 # Insert Student
 POST    /insert                     controllers.FormController.insertStudent
 
